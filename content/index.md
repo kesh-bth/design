@@ -6,6 +6,9 @@ Description: This is our index page.
 Home page
 ==========================
 
-The source for this page is in `content/index.md`.
+Om mig
+----------------------
 
-This is a sample home page written in markdown with some frontmatter defined.
+
+
+![Bild på mig](assets/img/me-small.png "Bild på mig")
