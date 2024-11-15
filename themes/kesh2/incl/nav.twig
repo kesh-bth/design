@@ -8,10 +8,8 @@
         </div>
         {% endif %}
         <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
-            <a href="{{ base_url }}">
-                <p class="site-title">{{ site_title }}</p>
-                {{ pages["_meta"].meta.tagline|markdown }}
-            </a>
+            <p class="site-title">{{ site_title }}</p>
+            {{ pages["_meta"].meta.tagline|markdown }}
         </div>
         <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false"
             tabindex="1">

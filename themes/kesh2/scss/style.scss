@@ -1,0 +1,153 @@
+@use '../../node_modules/normalize.css/normalize';
+@use 'variables';
+@use 'blockquotes';
+@use 'code';
+
+%flex-and-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding-left: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p {
+  font-family: variables.$font-text;
+  color: variables.$text-color;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: variables.$font-headings;
+  color: variables.$heading-color;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$background-color;
+}
+
+.header {
+  @extend %flex-and-center;
+
+  a {
+    text-decoration: none;
+    color: variables.$link-color;
+    font-family: variables.$font-accent;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    width: 100px;
+    padding-right: 2%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .title {
+    font-family: variables.$font-headings;
+    font-size: 1.2em;
+    color: variables.$heading-color;
+  }
+}
+
+.site-header {
+  @extend %flex-and-center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header,
+.footer {
+  @extend %flex-and-center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2% 20%;
+  background-color: variables.$background-alt-color;
+}
+
+.footer {
+  font-size: 1.2em;
+
+  .social {
+    font-size: 2em;
+    text-decoration: none;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 4% auto;
+  width: 100%;
+  padding: 0 20%;
+  min-height: 100vh;
+  font-family: variables.$font-text;
+  color: variables.$text-color;
+
+  img {
+    max-width: 100%;
+    margin: 2% 0;
+  }
+}
+
+
+/********** MEDIA QUERIES **********/
+
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-large: 1000px;
+$breakpoint-extra-large: 1200px;
+
+@media (max-width: $breakpoint-mobile) {
+  .header,
+  .footer {
+    padding: 0 4%;
+    width: 100%;
+
+    .logo {
+      padding: 0;
+      width: 40px;
+    }
+
+    .title {
+      padding: 0;
+    }
+  }
+
+  .footer {
+    font-size: 1em;
+    padding: 1% 4%;
+  }
+
+  .site-header {
+    justify-content: space-between;
+  }
+
+  .main {
+    padding: 4%;
+  }
+}
