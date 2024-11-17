@@ -390,7 +390,7 @@ body {
   text-decoration: none;
   color: #99e6f0;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-transform: uppercase;
 }
 .header .logo {
@@ -408,6 +408,10 @@ body {
 
 .site-header {
   justify-content: flex-start;
+  width: 100%;
+}
+
+.nav {
   width: 100%;
 }
 

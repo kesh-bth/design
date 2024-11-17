@@ -54,7 +54,7 @@ body {
     text-decoration: none;
     color: variables.$link-color;
     font-family: variables.$font-accent;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
   }
 
@@ -77,6 +77,10 @@ body {
 .site-header {
   @extend %flex-and-center;
   justify-content: flex-start;
+  width: 100%;
+}
+
+.nav {
   width: 100%;
 }
 
