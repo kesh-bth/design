@@ -106,6 +106,7 @@ body {
 
 .footer a {
     color: #99E6F0;
+    text-decoration: none;
 }
 
 .footer .social {
