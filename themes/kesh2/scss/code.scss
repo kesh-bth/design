@@ -1,19 +1,24 @@
+@use 'variables';
+
 code {
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #f5f5f5;
+  background: variables.$background-alt-color;
   font-family: monospace;
+  color: variables.$text-color;
   font-size: 0.85rem;
   line-height: 1.9824;
 }
 
 pre {
+  margin-top: 1em;
   padding: 0 1em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #f5f5f5;
+  color: variables.$text-color;
+  background: variables.$background-alt-color;
 }
 
 pre code {

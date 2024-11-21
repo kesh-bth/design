@@ -1,0 +1,23 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main tech-main" role="main">
+      <aside class="tech-menu">
+        <ul class="tech-menu-list">
+          {% for page in pages("technology") %}
+            <li><a href=" {{page.url}} ">{{ page.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </aside>
+      <article class="tech-content">
+        {{ content }}
+      </article>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+
+</body>
+
+</html>

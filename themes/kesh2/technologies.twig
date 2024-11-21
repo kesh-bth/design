@@ -8,11 +8,10 @@
             {{ content }}
 
             {% for tech in meta.Techs %}
-                <div class="box {{ tech.class }}">
+                <a href="{{ base_url }}/technology/{{ tech.class }}" class="box {{ tech.class }}">
                     <h2>{{ tech.name }}</h2>
                     <i class="fa-brands fa-{{ tech.icon }}" aria-hidden="true"></i>
-                    <span class="sr-only">{{ social.title }}</span>
-                </div>
+                </a>
             {% endfor %}
         </div>
     </div>

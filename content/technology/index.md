@@ -10,7 +10,7 @@ Techs:
     class: html
     icon: html5
   - name: JAVASCRIPT
-    class: js
+    class: javascript
     icon: js
   - name: PHP
     class: php
