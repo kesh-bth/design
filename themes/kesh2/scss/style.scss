@@ -3,6 +3,7 @@
 @use 'blockquotes';
 @use 'code';
 @use 'technology';
+@use 'report';
 
 %flex-and-center {
   display: flex;
@@ -40,7 +41,9 @@ p {
   line-height: 1.6;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: variables.$font-headings;
   color: variables.$heading-color;
 }
@@ -78,8 +81,20 @@ h1 {
   width: 100%;
 }
 
-.nav {
-  width: 100%;
+#nav {
+  width: 120%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-left: 1.2em;
+  }
 }
 
 .header,
@@ -111,10 +126,16 @@ h1 {
   min-height: 100vh;
   font-family: variables.$font-text;
   color: variables.$text-color;
+}
+
+.me-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   img {
     max-width: 100%;
-    margin: 2% 0;
+    margin-left: 2em;
   }
 }
 
@@ -148,4 +169,28 @@ h1 {
   .main {
     padding: 4%;
   }
+
+  .me-container {
+    flex-direction: column;
+
+    img {
+      margin: 2em 0 0;
+    }
+  }
+
+  #nav{
+    width: 100%;
+
+    ul {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    ul li {
+      margin: 1em 0;
+    }
+
+  }
+  
+
 }

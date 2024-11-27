@@ -1,0 +1,16 @@
+@use 'variables';
+
+.report-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 6em;
+
+  h2 {
+    margin-top: 2em;
+  }
+
+  h3 {
+    margin-top: 1em;
+  }
+}
