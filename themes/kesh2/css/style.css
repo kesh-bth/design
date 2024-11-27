@@ -455,6 +455,10 @@ pre code {
 .report-page h3 {
   margin-top: 1em;
 }
+.report-page img {
+  max-width: 100%;
+  margin-top: 2em;
+}
 
 .footer, .site-header, .header {
   display: flex;
