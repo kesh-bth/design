@@ -1,4 +1,6 @@
-@use 'variables';
+$theme: 'dark' !default;
+@import './color_variables/variables';
+@import 'global-variables';
 
 .landing-page {
   display: grid;
@@ -21,15 +23,15 @@
 
 .box {
   text-align: center;
-  background-color: variables.$background-alt-color;
+  background-color: $background-alt-color;
   padding: 2em;
   text-decoration: none;
-  color: variables.$link-color;
+  color: $link-color;
 }
 
 .box:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
-  color: variables.$link-color-hover;
+  color: $link-color-hover;
 }
 
 .html {
@@ -69,23 +71,23 @@
 
   .tech-menu {
     width: 25%;
-    border-right: 6px solid variables.$background-alt-color;
+    border-right: 6px solid $background-alt-color;
   }
 
   .tech-menu-list {
     list-style: none;
-    font-family: variables.$font-headings;
+    font-family: $font-headings;
     font-size: 1.5em;
     line-height: 2;
   }
 
   .tech-menu-list a {
-    color: variables.$link-color;
+    color: $link-color;
     text-decoration: none;
   }
 
   .tech-menu-list a:hover {
-    color: variables.$link-color-hover;
+    color: $link-color-hover;
   }
 
   .tech-content {
@@ -96,7 +98,7 @@
 
 /********** MEDIA QUERIES **********/
 
-@media (max-width: variables.$breakpoint-mobile) {
+@media (max-width: $breakpoint-mobile) {
   .box {
     grid-column: 1 / -1;
   }
@@ -108,5 +110,4 @@
   .tech-main .tech-content {
     width: 100%;
   }
-
 }

@@ -1,4 +1,4 @@
-$theme: 'dark' !default;
+$theme: 'light';
 
 @import '../../node_modules/normalize.css/normalize';
 @import './color_variables/variables';
@@ -8,4 +8,3 @@ $theme: 'dark' !default;
 @import 'code';
 @import 'technology';
 @import 'report';
-@import 'gallery';

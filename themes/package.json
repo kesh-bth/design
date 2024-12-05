@@ -6,11 +6,19 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "stylelint \"**/*.scss\"",
-    "style": "sass kesh2/scss/style.scss kesh2/css/style.css --no-source-map",
-    "style-min": "sass kesh2/scss/style.scss kesh2/css/style.min.css --no-source-map --style compressed"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "lint": "stylelint \"**/*.scss\"",
+      "watch": "sass kesh2/scss/style.scss:kesh2/css/style.css kesh2/scss/style-light.scss:kesh2/css/style-light.css --no-source-map --watch",
+      "watch-min": "sass kesh2/scss/style.scss:kesh2/css/style.min.css kesh2/scss/style-light.scss:kesh2/css/style-light.min.css --no-source-map --watch --style compressed",
+      "style": "npm run style-light && npm run style-dark",
+      "style-min": "npm run style-light-min && npm run style-dark-min",
+      "style-dark": "sass kesh2/scss/style.scss kesh2/css/style.css --no-source-map",
+      "style-dark-min": "sass kesh2/scss/style.scss kesh2/css/style.min.css --no-source-map --style compressed",
+      "style-light": "sass kesh2/scss/style-light.scss kesh2/css/style-light.css --no-source-map",
+      "style-light-min": "sass kesh2/scss/style-light.scss kesh2/css/style-light.min.css --no-source-map --style compressed"
   },
+
+
   "keywords": [],
   "author": "",
   "license": "ISC",

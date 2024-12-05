@@ -1,13 +1,15 @@
-@use 'variables';
+$theme: 'dark' !default;
+@import './color_variables/variables';
+@import 'global-variables';
 
 code {
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: variables.$background-alt-color;
+  background: $background-alt-color;
   font-family: monospace;
-  color: variables.$text-color;
+  color: $text-color;
   font-size: 0.85rem;
   line-height: 1.9824;
 }
@@ -17,8 +19,8 @@ pre {
   padding: 0 1em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  color: variables.$text-color;
-  background: variables.$background-alt-color;
+  color: $text-color;
+  background: $background-alt-color;
 }
 
 pre code {

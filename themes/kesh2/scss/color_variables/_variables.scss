@@ -1,0 +1,22 @@
+$theme: 'dark' !default;
+
+@import '_variables-light';
+@import '_variables-dark';
+
+$text-color: $text-color-dark !default;
+$heading-color: $heading-color-dark !default;
+$accent-color: $accent-color-dark !default;
+$link-color: $link-color-dark !default;
+$link-color-hover: $link-color-hover-dark !default;
+$background-color: $background-color-dark !default;
+$background-alt-color: $background-alt-color-dark !default;
+
+@if $theme == 'light' {
+  $text-color: $text-color-light;
+  $heading-color: $heading-color-light;
+  $accent-color: $accent-color-light;
+  $link-color: $link-color-light;
+  $link-color-hover: $link-color-hover-light;
+  $background-color: $background-color-light;
+  $background-alt-color: $background-alt-color-light;
+}

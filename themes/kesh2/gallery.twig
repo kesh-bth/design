@@ -1,0 +1,25 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+      {{ content }}
+        <div class="gallery">
+            {% for image in meta.Image %}
+              <a href="{{ base_url }}/image/{{ image.title }}.jpg" target="_blank"  class="gallery-img">
+                  <picture>
+                      <source media="(min-width: 668px)" srcset="{{ base_url }}/image/{{ image.title }}.jpg">
+                      <img src="{{ base_url }}/image/{{ image.title }}.jpg&w=667" alt="{{ image.alt }}">
+                  </picture>
+              </a>
+            {% endfor %}
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+
+</body>
+
+</html>
+
