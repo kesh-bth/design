@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -350,6 +351,11 @@ p {
   line-height: 1.6;
 }
 
+a {
+  color: #7a4467;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3 {
@@ -362,11 +368,15 @@ h2 {
 }
 
 .header a {
-  text-decoration: none;
-  color: #7a4467;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 1.2em;
   text-transform: uppercase;
+}
+.header .site-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
 }
 .header .logo {
   width: 100px;
@@ -380,9 +390,14 @@ h2 {
   font-size: 1.2em;
   color: #153651;
 }
+.header .site-title {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #153651;
+}
 
 .site-header {
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -393,11 +408,13 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
 #nav ul li {
   margin-left: 1.2em;
+  line-height: 1.5;
 }
 
 .header,
@@ -439,6 +456,15 @@ h2 {
 }
 
 /********** MEDIA QUERIES **********/
+@media (max-width: 1200px) {
+  .main {
+    padding: 0 5%;
+  }
+  .header,
+  .footer {
+    padding: 2% 5%;
+  }
+}
 @media (max-width: 600px) {
   .header {
     padding: 0 4%;
@@ -455,7 +481,7 @@ h2 {
     font-size: 1em;
     padding: 4%;
   }
-  .site-header {
+  .header .site-header {
     justify-content: space-between;
   }
   .main {
@@ -617,11 +643,14 @@ pre code {
   margin-top: 2em;
 }
 .report-page h3 {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 .report-page img {
   max-width: 100%;
-  margin-top: 2em;
+  margin: 1em 0 2em;
+}
+.report-page .spreadsheet {
+  min-height: 800px;
 }
 
 .reports-page {
@@ -634,4 +663,52 @@ pre code {
 }
 .reports-page h2:hover {
   color: #a7628f;
+}
+
+.gallery {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin: 6em 0;
+}
+
+.gallery-img {
+  position: relative; /* Behövs om du vill använda `object-fit` */
+  overflow: hidden;
+}
+
+.gallery-img img {
+  width: 100%; /* Bilder fyller bredden av sin container */
+  height: 100%; /* Gör att de fyller höjden */
+  object-fit: cover; /* Bilder skalas proportionellt och beskärs om nödvändigt */
+  object-position: center; /* Bilder centreras i sin container */
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 1em 0 6em;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/********** MEDIA QUERIES **********/
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; /* En kolumn */
+    grid-template-rows: auto; /* Låter raderna anpassa sig */
+    margin: 2em 0;
+  }
 }

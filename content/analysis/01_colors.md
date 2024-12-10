@@ -1,6 +1,6 @@
 ---
-Title: Reports
-Description: This is my reports page.
+Title: Färgutvärdering
+Description: Färgutvärdering
 Template: report
 Sections:
   - name: Intro

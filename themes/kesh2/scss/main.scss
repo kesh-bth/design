@@ -39,6 +39,11 @@ p {
   line-height: 1.6;
 }
 
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3 {
@@ -54,11 +59,16 @@ h2 {
   @extend %flex-and-center;
 
   a {
-    text-decoration: none;
-    color: $link-color;
     font-family: $font-accent;
     font-size: 1.2em;
     text-transform: uppercase;
+  }
+
+  .site-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
   }
 
   .logo {
@@ -75,11 +85,17 @@ h2 {
     font-size: 1.2em;
     color: $heading-color;
   }
+
+  .site-title {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: $heading-color;
+  }
 }
 
 .site-header {
   @extend %flex-and-center;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -90,12 +106,14 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
   }
 
   ul li {
     margin-left: 1.2em;
+    line-height: 1.5;
   }
 }
 
@@ -143,6 +161,17 @@ h2 {
 
 /********** MEDIA QUERIES **********/
 
+@media (max-width: $breakpoint-extra-large) {
+  .main {
+    padding: 0 5%;
+  }
+
+  .header,
+  .footer {
+  padding: 2% 5%;
+  }
+}
+
 @media (max-width: $breakpoint-mobile) {
   .header {
     padding: 0 4%;
@@ -163,7 +192,7 @@ h2 {
     padding: 4%;
   }
 
-  .site-header {
+  .header .site-header {
     justify-content: space-between;
   }
 

@@ -13,12 +13,16 @@ $theme: 'dark' !default;
   }
 
   h3 {
-    margin-top: 1em;
+    margin-top: 2em;
   }
 
   img {
     max-width: 100%;
-    margin-top: 2em;
+    margin: 1em 0 2em;
+  }
+
+  .spreadsheet {
+    min-height: 800px;
   }
 }
 

@@ -5,10 +5,10 @@ Template: reports
 Sections:
   - name: Kmom04 - Färgutvärdering
     class: 01_colors
-  - name: Kmom06 - 
-    class: report-section
-  - name: Kmom 07 - 
-    class: report-section
+  - name: Kmom05 - Laddningstider & användbarhet
+    class: 02_load
+  - name: Kmom 06 - Designprinciper
+    class: 03_design_principles
 ---
 
 Rapporter
