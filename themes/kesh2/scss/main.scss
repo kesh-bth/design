@@ -55,6 +55,10 @@ h2 {
   color: $accent-color;
 }
 
+.nav a, .nav-toggle {
+  color: $link-color;
+}
+
 .header {
   @extend %flex-and-center;
 
@@ -172,6 +176,20 @@ h2 {
   }
 }
 
+@media (max-width: $breakpoint-tablet) {
+  #nav {
+    width: 100%;
+    ul {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    ul li {
+      margin: 1em 0;
+    }
+  }
+}
+
 @media (max-width: $breakpoint-mobile) {
   .header {
     padding: 0 4%;
@@ -205,18 +223,6 @@ h2 {
 
     img {
       margin: 2em 0 0;
-    }
-  }
-
-  #nav {
-    width: 100%;
-    ul {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    ul li {
-      margin: 1em 0;
     }
   }
 }
