@@ -17,7 +17,4 @@ Image:
     alt: Logotypdesign för Torpets Elteknik
 ---
 
-Galleri
-========
-
 Här visas ett urval av designprojekt jag gjort under senaste åren, från verkliga projekt och illustrationer till konceptdesigner.

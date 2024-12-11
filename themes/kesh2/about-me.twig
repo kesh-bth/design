@@ -3,10 +3,12 @@
 <body>
     {% include 'incl/nav.twig' %}
     <div class="main" role="main">
-        <h1>{{ meta.title }}</h1>
         <div class="me-container">
-        <img src="{{ meta.Image[0].url }}" alt="{{ meta.Image[0].title }}">
-        {{ content }}
+            <img src="{{ meta.Image[0].url }}" alt="{{ meta.Image[0].title }}">
+            <div class="me-text">
+                <h1>{{ meta.title }}</h1>
+                {{ content }}
+            </div>
         </div>
     </div>
     

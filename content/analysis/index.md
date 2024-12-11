@@ -10,6 +10,3 @@ Sections:
   - name: Kmom 06 - Designprinciper
     class: 03_design_principles
 ---
-
-Rapporter
-==========================

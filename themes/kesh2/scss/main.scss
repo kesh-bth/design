@@ -28,7 +28,7 @@ ul {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 0;
   background-color: $background-color;
 }
@@ -37,6 +37,7 @@ p {
   font-family: $font-text;
   color: $text-color;
   line-height: 1.6;
+  font-size: 1.1em;
 }
 
 a {
@@ -51,16 +52,38 @@ h3 {
   color: $heading-color;
 }
 
+h1 {
+  font-size: 2.6em;
+}
+
 h2 {
+  font-size: 2em;
   color: $accent-color;
+  padding-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .nav a, .nav-toggle {
   color: $link-color;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.subheading {
+  font-size: 1.4em;
+}
+
 .header {
   @extend %flex-and-center;
+
+  background-image: url(../../../assets/img/header2.webp);
 
   a {
     font-family: $font-accent;
@@ -76,7 +99,7 @@ h2 {
   }
 
   .logo {
-    width: 100px;
+    width: 70px;
     padding-right: 2%;
   }
 
@@ -100,11 +123,11 @@ h2 {
 .site-header {
   @extend %flex-and-center;
   justify-content: space-between;
-  width: 100%;
+  width: 30%;
 }
 
 #nav {
-  width: 120%;
+  width: 70%;
 
   ul {
     display: flex;
@@ -113,11 +136,25 @@ h2 {
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
+    gap: 0.8em;
   }
 
   ul li {
     margin-left: 1.2em;
     line-height: 1.5;
+  }
+
+  ul li a:hover {
+    color: $heading-color;
+  }
+
+  .active a {
+    color: $heading-color;
+    font-weight: 600;
+  }
+
+  .active {
+    border-bottom: 2px solid $heading-color;
   }
 }
 
@@ -160,6 +197,7 @@ h2 {
   img {
     max-width: 100%;
     margin-right: 2em;
+    opacity: 80%;
   }
 }
 

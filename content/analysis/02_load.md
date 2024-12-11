@@ -53,3 +53,5 @@ Jag tyckte att det var lite roligt att se att PageSpeed rekommenderade en rensni
 
 ### Mätvärden
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTGVXjX7_6gcMt5g6aPvRc3MRjTyhCwPBx50zvLmrLXnjlp7Hy__C7cxdMHK7qs1NvW1l89Dub4UHZF/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" class="spreadsheet"></iframe>
+
+Denna analys och rapport har utförts som ett individuellt arbete av Keshti Gyllinger.

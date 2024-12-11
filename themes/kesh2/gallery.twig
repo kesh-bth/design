@@ -4,7 +4,8 @@
     {% include 'incl/nav.twig' %}
 
     <div class="main" role="main">
-      {{ content }}
+      <h1 class="text-center">{{ meta.title }}</h1>
+      <div class="subheading text-center">{{ content }}</div>
         <div class="gallery">
             {% for image in meta.Image %}
               <a href="{{ base_url }}/image/{{ image.title }}.jpg" target="_blank"  class="gallery-img">
@@ -16,7 +17,7 @@
             {% endfor %}
         </div>
 
-        <h3>En rolig sketch av Freudian Slip Productions</h3>
+        <h3 class="text-center">En rolig sketch av Freudian Slip Productions</h3>
         <div class="embed-container">
           <iframe src="https://www.youtube.com/embed/0wvP5xw3JnE?si=CbYb2ngsml6CAZDw" frameborder="0" allowfullscreen></iframe>
         </div>

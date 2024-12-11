@@ -340,15 +340,16 @@ ul {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 0;
-  background-color: #101011;
+  background-color: #010011;
 }
 
 p {
   font-family: "Fira Sans", sans-serif;
   color: #c5bad2;
   line-height: 1.6;
+  font-size: 1.1em;
 }
 
 a {
@@ -363,14 +364,37 @@ h3 {
   color: #fff;
 }
 
+h1 {
+  font-size: 2.6em;
+}
+
 h2 {
+  font-size: 2em;
   color: #f3e493;
+  padding-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .nav a, .nav-toggle {
   color: #99e6f0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.subheading {
+  font-size: 1.4em;
+}
+
+.header {
+  background-image: url(../../../assets/img/header2.webp);
+}
 .header a {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 1.2em;
@@ -383,7 +407,7 @@ h2 {
   gap: 1em;
 }
 .header .logo {
-  width: 100px;
+  width: 70px;
   padding-right: 2%;
 }
 .header img {
@@ -402,11 +426,11 @@ h2 {
 
 .site-header {
   justify-content: space-between;
-  width: 100%;
+  width: 30%;
 }
 
 #nav {
-  width: 120%;
+  width: 70%;
 }
 #nav ul {
   display: flex;
@@ -415,10 +439,21 @@ h2 {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  gap: 0.8em;
 }
 #nav ul li {
   margin-left: 1.2em;
   line-height: 1.5;
+}
+#nav ul li a:hover {
+  color: #fff;
+}
+#nav .active a {
+  color: #fff;
+  font-weight: 600;
+}
+#nav .active {
+  border-bottom: 2px solid #fff;
 }
 
 .header,
@@ -426,7 +461,7 @@ h2 {
   margin: 0 auto;
   width: 100%;
   padding: 2% 20%;
-  background-color: #18181b;
+  background-color: #0E0C2F;
 }
 
 .footer {
@@ -457,10 +492,11 @@ h2 {
 .me-container img {
   max-width: 100%;
   margin-right: 2em;
+  opacity: 80%;
 }
 
 /********** MEDIA QUERIES **********/
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .main {
     padding: 0 5%;
   }
@@ -515,7 +551,7 @@ code {
   padding: 0.1em 0.2em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #18181b;
+  background: #0E0C2F;
   font-family: monospace;
   color: #c5bad2;
   font-size: 0.85rem;
@@ -528,7 +564,7 @@ pre {
   border: 1px solid #ccc;
   border-radius: 0.3em;
   color: #c5bad2;
-  background: #18181b;
+  background: #0E0C2F;
 }
 
 pre code {
@@ -560,7 +596,7 @@ pre code {
 
 .box {
   text-align: center;
-  background-color: #18181b;
+  background-color: #0E0C2F;
   padding: 2em;
   text-decoration: none;
   color: #99e6f0;
@@ -608,7 +644,7 @@ pre code {
 }
 .tech-main .tech-menu {
   width: 25%;
-  border-right: 6px solid #18181b;
+  border-right: 6px solid #0E0C2F;
 }
 .tech-main .tech-menu-list {
   list-style: none;
@@ -645,15 +681,18 @@ pre code {
   gap: 1em;
   margin-bottom: 6em;
 }
+.report-page h2:first-of-type {
+  margin-top: 1em;
+}
 .report-page h2 {
-  margin-top: 2em;
+  margin-top: 2.5em;
+  padding-bottom: 0;
 }
 .report-page h3 {
-  margin-top: 2em;
+  margin: 2em 0 0.5em;
 }
 .report-page img {
   max-width: 100%;
-  margin: 1em 0 2em;
 }
 .report-page .spreadsheet {
   min-height: 800px;
@@ -666,9 +705,14 @@ pre code {
 }
 .reports-page h2 {
   color: #99e6f0;
+  padding: 0;
 }
 .reports-page h2:hover {
   color: #fff;
+}
+
+h3 {
+  margin-bottom: 1em;
 }
 
 .gallery {
@@ -678,13 +722,11 @@ pre code {
   grid-template-rows: repeat(2, auto);
   margin: 6em 0;
 }
-
-.gallery-img {
+.gallery .gallery-img {
   position: relative; /* Behövs om du vill använda `object-fit` */
   overflow: hidden;
 }
-
-.gallery-img img {
+.gallery .gallery-img img {
   width: 100%; /* Bilder fyller bredden av sin container */
   height: 100%; /* Gör att de fyller höjden */
   object-fit: cover; /* Bilder skalas proportionellt och beskärs om nödvändigt */

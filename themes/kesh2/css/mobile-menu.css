@@ -15,14 +15,18 @@
 }
 
 .nav a, .nav-toggle {
-    color: $link-color;
+    color: #333;
 }
 
 .nav-toggle {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
+    .header .site-header {
+        width: 100%;
+    }
+
     .header {
         flex-direction: column;
     }

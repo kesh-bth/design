@@ -65,15 +65,12 @@ Det är endast typsnittet Mabry som används på sidan, ett rätt klassiskt typs
 ### Skärmbilder
 ![alt text][nordiska1]
 [nordiska1]: ../assets/img/kmom04/Nordiska1.png "Nordiska Museet, bild 1"
-Toppen av startsidan
 
 ![alt text][nordiska2]
 [nordiska2]: ../assets/img/kmom04/Nordiska2.png "Nordiska Museet, bild 2"
-Sektion 2: Reklam för utställning
 
 ![alt text][nordiska3]
 [nordiska3]: ../assets/img/kmom04/Nordiska3.png "Nordiska Museet, bild 3"
-Länkar till utställningar med olika bakgrundsfärger
 
 
 
@@ -111,15 +108,12 @@ Användningen av det kompakta typsnittet i headern där texten inverteras mot en
 ### Skärmbilder
 ![alt text][fotografiska1]
 [fotografiska1]: ../assets/img/kmom04/Fotografiska1.png "Fotografiska, bild 1"
-Toppen av startsidan med exempel på anti-design i texten
 
 ![alt text][fotografiska2]
 [fotografiska2]: ../assets/img/kmom04/Fotografiska2.png "Fotografiska, bild 2"
-Sektion 2: Accentfärger som bakgrund på olika sektioner
 
 ![alt text][fotografiska3]
 [fotografiska3]: ../assets/img/kmom04/Fotografiska3.png "Fotografiska, bild 3"
-Accentfärg som bakgrund i placeholder-bilden för New York
 
 
 
@@ -159,14 +153,11 @@ Typsnitten som används är en kombination av serif (Shippori Mincho) och sans-s
 ### Skärmbilder
 ![alt text][naturhistoriska1]
 [naturhistoriska1]: ../assets/img/kmom04/Naturhistoriska1.png "Naturhistoriska, bild 1"
-Toppen av startsidan
 
 ![alt text][naturhistoriska2]
 [naturhistoriska2]: ../assets/img/kmom04/Naturhistoriska2.png "Naturhistoriska, bild 2"
-Sektion med block och exempel på inkonsekvent typsnittsanvändning
 
 ![alt text][naturhistoriska3]
 [naturhistoriska3]: ../assets/img/kmom04/Naturhistoriska3.png "Naturhistoriska, bild 3"
-Undersida med ljust tema
 
 Ett individuellt analysprojekt av Keshti Gyllinger

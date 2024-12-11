@@ -8,17 +8,21 @@ $theme: 'dark' !default;
   gap: 1em;
   margin-bottom: 6em;
 
+  h2:first-of-type {
+    margin-top: 1em;
+  }
+  
   h2 {
-    margin-top: 2em;
+    margin-top: 2.5em;
+    padding-bottom: 0;
   }
 
   h3 {
-    margin-top: 2em;
+    margin: 2em 0 0.5em;
   }
 
   img {
     max-width: 100%;
-    margin: 1em 0 2em;
   }
 
   .spreadsheet {
@@ -33,6 +37,7 @@ $theme: 'dark' !default;
 
   h2 {
     color: $link-color;
+    padding: 0;
   }
 
   h2:hover {
