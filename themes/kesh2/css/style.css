@@ -380,7 +380,8 @@ h3 {
   letter-spacing: 2px;
 }
 
-.nav a, .nav-toggle {
+.nav a,
+.nav-toggle {
   color: #99e6f0;
 }
 
@@ -393,7 +394,7 @@ h3 {
 }
 
 .header {
-  background-image: url(../../../assets/img/header2.webp);
+  background-image: url("../../../assets/img/header2.webp");
 }
 .header a {
   font-family: "Fira Sans Condensed", sans-serif;
@@ -426,13 +427,11 @@ h3 {
 
 .site-header {
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
 }
 
-#nav {
-  width: 70%;
-}
-#nav ul {
+.nav {
+  padding-left: 2em;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -441,18 +440,18 @@ h3 {
   padding: 0;
   gap: 0.8em;
 }
-#nav ul li {
+.nav li {
   margin-left: 1.2em;
   line-height: 1.5;
 }
-#nav ul li a:hover {
+.nav li a:hover {
   color: #fff;
 }
-#nav .active a {
+.nav .active a {
   color: #fff;
   font-weight: 600;
 }
-#nav .active {
+.nav .active {
   border-bottom: 2px solid #fff;
 }
 
@@ -461,7 +460,7 @@ h3 {
   margin: 0 auto;
   width: 100%;
   padding: 2% 20%;
-  background-color: #0E0C2F;
+  background-color: #0e0c2f;
 }
 
 .footer {
@@ -505,15 +504,23 @@ h3 {
     padding: 2% 5%;
   }
 }
-@media (max-width: 768px) {
-  #nav {
-    width: 100%;
+@media (max-width: 900px) {
+  .header {
+    background-color: #0e0c2f;
+    background-image: none;
+    padding-top: 3%;
   }
-  #nav ul {
+  .nav {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    width: 100%;
     flex-direction: column;
     text-align: center;
   }
-  #nav ul li {
+  .nav li {
     margin: 1em 0;
   }
 }
@@ -543,7 +550,7 @@ h3 {
     padding: 0;
     font-size: smaller;
   }
-  #nav ul li {
+  .nav li {
     margin: 0;
   }
   .footer {
@@ -568,7 +575,7 @@ code {
   padding: 0.1em 0.2em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #0E0C2F;
+  background: #0e0c2f;
   font-family: monospace;
   color: #c5bad2;
   font-size: 0.85rem;
@@ -581,7 +588,7 @@ pre {
   border: 1px solid #ccc;
   border-radius: 0.3em;
   color: #c5bad2;
-  background: #0E0C2F;
+  background: #0e0c2f;
 }
 
 pre code {
@@ -613,7 +620,7 @@ pre code {
 
 .box {
   text-align: center;
-  background-color: #0E0C2F;
+  background-color: #0e0c2f;
   padding: 2em;
   text-decoration: none;
   color: #99e6f0;
@@ -661,7 +668,7 @@ pre code {
 }
 .tech-main .tech-menu {
   width: 25%;
-  border-right: 6px solid #0E0C2F;
+  border-right: 6px solid #0e0c2f;
 }
 .tech-main .tech-menu-list {
   list-style: none;

@@ -1,7 +1,7 @@
 $theme: 'dark' !default;
 
-@import '_variables-light';
-@import '_variables-dark';
+@import 'variables-light';
+@import 'variables-dark';
 
 $text-color: $text-color-dark !default;
 $heading-color: $heading-color-dark !default;

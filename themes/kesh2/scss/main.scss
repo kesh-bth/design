@@ -68,7 +68,8 @@ h3 {
   letter-spacing: 2px;
 }
 
-.nav a, .nav-toggle {
+.nav a,
+.nav-toggle {
   color: $link-color;
 }
 
@@ -83,7 +84,7 @@ h3 {
 .header {
   @extend %flex-and-center;
 
-  background-image: url(../../../assets/img/header2.webp);
+  background-image: url('../../../assets/img/header2.webp');
 
   a {
     font-family: $font-accent;
@@ -123,28 +124,25 @@ h3 {
 .site-header {
   @extend %flex-and-center;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
 }
 
-#nav {
-  width: 70%;
+.nav {
+  padding-left: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 0.8em;
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    gap: 0.8em;
-  }
-
-  ul li {
+  li {
     margin-left: 1.2em;
     line-height: 1.5;
   }
 
-  ul li a:hover {
+  li a:hover {
     color: $heading-color;
   }
 
@@ -210,19 +208,29 @@ h3 {
 
   .header,
   .footer {
-  padding: 2% 5%;
+    padding: 2% 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    background-color: $background-alt-color;
+    background-image: none;
+    padding-top: 3%;
+  }
+
+  .nav {
+    margin-top: 2em;
   }
 }
 
 @media (max-width: $breakpoint-tablet) {
-  #nav {
+  .nav {
     width: 100%;
-    ul {
-      flex-direction: column;
-      text-align: center;
-    }
+    flex-direction: column;
+    text-align: center;
 
-    ul li {
+    li {
       margin: 1em 0;
     }
   }
@@ -260,8 +268,8 @@ h3 {
     }
   }
 
-  #nav {
-    ul li {
+  .nav {
+    li {
       margin: 0;
     }
   }

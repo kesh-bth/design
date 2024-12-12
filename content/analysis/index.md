@@ -7,6 +7,6 @@ Sections:
     class: 01_colors
   - name: Kmom05 - Laddningstider & användbarhet
     class: 02_load
-  - name: Kmom 06 - Designprinciper
+  - name: Kmom06 - Designprinciper
     class: 03_design_principles
 ---
