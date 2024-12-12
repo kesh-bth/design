@@ -1,5 +1,5 @@
 ---
-Logo: image/logo2.png
+Logo: image/logo2.webp
 Tagline: Keshti Gyllinger
 Social:
     - title: Länk till GitHub

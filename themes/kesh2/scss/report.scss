@@ -28,6 +28,10 @@ $theme: 'dark' !default;
   .spreadsheet {
     min-height: 800px;
   }
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 .reports-page {

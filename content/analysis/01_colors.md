@@ -64,13 +64,13 @@ Det är endast typsnittet Mabry som används på sidan, ett rätt klassiskt typs
 
 ### Skärmbilder
 ![alt text][nordiska1]
-[nordiska1]: ../assets/img/kmom04/Nordiska1.png "Nordiska Museet, bild 1"
+[nordiska1]: ../assets/img/kmom04/Nordiska1.webp "Nordiska Museet, bild 1"
 
 ![alt text][nordiska2]
-[nordiska2]: ../assets/img/kmom04/Nordiska2.png "Nordiska Museet, bild 2"
+[nordiska2]: ../assets/img/kmom04/Nordiska2.webp "Nordiska Museet, bild 2"
 
 ![alt text][nordiska3]
-[nordiska3]: ../assets/img/kmom04/Nordiska3.png "Nordiska Museet, bild 3"
+[nordiska3]: ../assets/img/kmom04/Nordiska3.webp "Nordiska Museet, bild 3"
 
 
 
@@ -107,13 +107,13 @@ Användningen av det kompakta typsnittet i headern där texten inverteras mot en
 
 ### Skärmbilder
 ![alt text][fotografiska1]
-[fotografiska1]: ../assets/img/kmom04/Fotografiska1.png "Fotografiska, bild 1"
+[fotografiska1]: ../assets/img/kmom04/Fotografiska1.webp "Fotografiska, bild 1"
 
 ![alt text][fotografiska2]
-[fotografiska2]: ../assets/img/kmom04/Fotografiska2.png "Fotografiska, bild 2"
+[fotografiska2]: ../assets/img/kmom04/Fotografiska2.webp "Fotografiska, bild 2"
 
 ![alt text][fotografiska3]
-[fotografiska3]: ../assets/img/kmom04/Fotografiska3.png "Fotografiska, bild 3"
+[fotografiska3]: ../assets/img/kmom04/Fotografiska3.webp "Fotografiska, bild 3"
 
 
 
@@ -152,12 +152,12 @@ Typsnitten som används är en kombination av serif (Shippori Mincho) och sans-s
 
 ### Skärmbilder
 ![alt text][naturhistoriska1]
-[naturhistoriska1]: ../assets/img/kmom04/Naturhistoriska1.png "Naturhistoriska, bild 1"
+[naturhistoriska1]: ../assets/img/kmom04/Naturhistoriska1.webp "Naturhistoriska, bild 1"
 
 ![alt text][naturhistoriska2]
-[naturhistoriska2]: ../assets/img/kmom04/Naturhistoriska2.png "Naturhistoriska, bild 2"
+[naturhistoriska2]: ../assets/img/kmom04/Naturhistoriska2.webp "Naturhistoriska, bild 2"
 
 ![alt text][naturhistoriska3]
-[naturhistoriska3]: ../assets/img/kmom04/Naturhistoriska3.png "Naturhistoriska, bild 3"
+[naturhistoriska3]: ../assets/img/kmom04/Naturhistoriska3.webp "Naturhistoriska, bild 3"
 
 Ett individuellt analysprojekt av Keshti Gyllinger
